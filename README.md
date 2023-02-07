@@ -28,6 +28,6 @@ Everything you should need (except for your own code, of course!) is included in
 You can use the commands outlined above to interact with the **component.o** file. Be sure to create a makefile for compilation. The user should be able to run ">make clean" followed by ">make" in the terminal, and have your program compile into an executable file.
 
 # Submission
-You should submit a zip file of all the necessary files to compile and run your program to cjcl71292@uga.edu by Tuesday, February 14th at 11:59 PM. Once again, if you have any questions at all, do not hesitate to reach out to me!
+You should submit a zip file of all the necessary files to compile and run your program to jcl71292@uga.edu by Tuesday, February 14th at 11:59 PM. Once again, if you have any questions at all, do not hesitate to reach out to me!
 
 Good luck!
