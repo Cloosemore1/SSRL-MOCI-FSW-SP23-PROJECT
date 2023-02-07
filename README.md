@@ -1,5 +1,5 @@
 # UGA SSRL MOCI Flight Software Spring 2023 Take Home Project
-Congratulations on passing your first round of interviews for the UGA SSRL! Your Round 2 interview will be in the form of the Flight Software take-home project outlined in this document. If you have any questions in regards to the instructions or even if you need help or clarification with any part of the project, I highly encourage you to contact me at connor.loosemore2021@gmail.com. The projects will be scored based not only on whether project criteria are met, but also whether or not it is obvious that you put in effort into your submission. Don't fret if you can't get something working, just do your best work!
+Congratulations on passing your first round of interviews for the UGA SSRL! Your Round 2 interview will be in the form of the Flight Software take-home project outlined in this document. If you have any questions in regards to the instructions or even if you need help or clarification with any part of the project, I highly encourage you to contact me at jcl71292@uga.edu. The projects will be scored based not only on whether project criteria are met, but also whether or not it is obvious that you put in effort into your submission. Don't fret if you can't get something working, just do your best work!
 
 # Project Outline
 Flight Software on MOCI (or any satellite) often involves communicating data between many separate components in an efficient and reliable way. Your take-home project will consist of a program written in C which handles packet communication between a COTS (Commercial Off-the-Shelf) component and the component which will be running your program. An API will be provided to you that you can use to communicate with the component, which will send you raw data with a specified packet format. Your task is to decode this data into useful, human readable format while also handling any necessary error correction on the data.
@@ -28,6 +28,6 @@ Everything you should need (except for your own code, of course!) is included in
 You can use the commands outlined above to interact with the **component.o** file. Be sure to create a makefile for compilation. The user should be able to run ">make clean" followed by ">make" in the terminal, and have your program compile into an executable file.
 
 # Submission
-You should submit a zip file of all the necessary files to compile and run your program to connor.loosemore2021@gmail.com by Tuesday, February 14th at 11:59 PM. Once again, if you have any questions at all, do not hesitate to reach out to me!
+You should submit a zip file of all the necessary files to compile and run your program to cjcl71292@uga.edu by Tuesday, February 14th at 11:59 PM. Once again, if you have any questions at all, do not hesitate to reach out to me!
 
 Good luck!
