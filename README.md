@@ -8,7 +8,7 @@ Your program will communicate with the component via SPI (Serial Peripheral Inte
 ![SPI_Diagram](https://user-images.githubusercontent.com/60021392/216702495-3152ef46-6e03-4b49-bb20-472a00e10fbf.png)
 In order to actually implement this communication protocol in code, the component API provided in this repository has 3 functions you can use.
 * void SET_CLK(boolean level) - Sets the clock line to the specified boolean logic level.
-* void WRITE_MOSI(boolean level) - Sets the MOSI line to the specified boolean logic level.
+* void SET_MOSI(boolean level) - Sets the MOSI line to the specified boolean logic level.
 * boolean READ_MISO(); - Returns the boolean logic level of the MISO line.
 
 Now that we understand WHEN to send bits, we will look at WHAT bits to send. In this particular application, we are only concerned with reading data from the device, although in many other applications, SPI communication can be much more complex. Although our component is essentially a black box (we do not understand, nor do we need to be concerned with, the internal workings) we do know that its addressable memory is comprised of 256 8-bit words. Every communication between the devices will be initiated by the host (your program). In order to read data from the component, the program must send 2 bytes to the component to receive a single byte of data from a particular memory address of the component. 16 clock pulses MUST be completed for the component to begin relaying data, and an additional 8 clock pulses, for a total of 24, MUST be completed to complete the communication with the device. Shown below is a packet format diagram:
